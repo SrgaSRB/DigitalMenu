@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>DigitalMenu</title>
+        <link href="index.css" rel="stylesheet" type="text/css"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="index.js"></script>
+        <script src="connectWithServer.js"></script>
+
+        <script type="text/javascript">
+            WebFont.load({
+                google: {
+                    families: ["Oswald:200,300,400,500,600,700", "Great Vibes:400"]
+                }
+            });
+        </script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    </head>
+    <body class="body">
+        <div class="header-local-info">
+            <div class="w-layout-blockcontainer container header-local-info-container w-container">
+                <img src="https://cdn.prod.website-files.com/6717dff7a3025e72d8381b78/6717e213361a863363ed734f_Screenshot%202024-10-22%20193318.png" loading="lazy" sizes="225.90625px" srcset="https://cdn.prod.website-files.com/6717dff7a3025e72d8381b78/6717e213361a863363ed734f_Screenshot%202024-10-22%20193318-p-500.png 500w, https://cdn.prod.website-files.com/6717dff7a3025e72d8381b78/6717e213361a863363ed734f_Screenshot%202024-10-22%20193318.png 645w" alt="" class="logo-image"/>
+                <div class="local-name">Sun Burgers</div>
+            </div>
+        </div>
+        <section class="hero-section">
+            <div class="w-layout-blockcontainer container main-conteiner w-container">
+                <div class="food-bar-and-entities-list-div">
+
+
+                    <div class="foodbar-type-1">
+                        <div class="foodbar-type-1-category">
+                            <div class="foodbar-type-1-category-icon">
+                                <img loading="lazy" src="https://cdn.prod.website-files.com/6717dff7a3025e72d8381b78/6717e038a178d52eff47acfa_pizza.png" alt="" class="foodbar-type-1-category-icon-image"/>
+                            </div>
+                            <div class="foodbar-type-1-category-name">Pice</div>
+                        </div>
+                        <div class="foodbar-type-1-category foodbar-type-1-category-selected">
+                            <div class="foodbar-type-1-category-icon">
+                                <img loading="lazy" src="https://cdn.prod.website-files.com/6717dff7a3025e72d8381b78/6717e038a178d52eff47acf3_hamburger.png" alt="" class="foodbar-type-1-category-icon-image"/>
+                            </div>
+                            <div class="foodbar-type-1-category-name">Burgeri</div>
+                        </div>
+                        <div class="foodbar-type-1-category">
+                            <div class="foodbar-type-1-category-icon">
+                                <img loading="lazy" src="https://cdn.prod.website-files.com/6717dff7a3025e72d8381b78/6717e037a178d52eff47abbd_pancakes.png" alt="" class="foodbar-type-1-category-icon-image"/>
+                            </div>
+                            <div class="foodbar-type-1-category-name">Palacinke</div>
+                        </div>
+                        <div class="foodbar-type-1-category">
+                            <div class="foodbar-type-1-category-icon">
+                                <img loading="lazy" src="https://cdn.prod.website-files.com/6717dff7a3025e72d8381b78/6717e037a178d52eff47ab9c_hot-soup.png" alt="" class="foodbar-type-1-category-icon-image"/>
+                            </div>
+                            <div class="foodbar-type-1-category-name">Supe</div>
+                        </div>
+                        <div class="foodbar-type-1-category">
+                            <div class="foodbar-type-1-category-icon">
+                                <img loading="lazy" src="https://cdn.prod.website-files.com/6717dff7a3025e72d8381b78/6717e039a178d52eff47ad46_beer%20(2).png" alt="" class="foodbar-type-1-category-icon-image"/>
+                            </div>
+                            <div class="foodbar-type-1-category-name">Piva</div>
+                        </div>
+                    </div>
+
+
+                   <div class="category-entites-list">
+                        <div class="entity-type-2">
+                            <div id="EntityID">01</div>
+                            <div class="entity-type-2-image">
+                                <img alt="" src="" loading="lazy" class="image-2"/>
+                                <div class="entity2-image-gradiant"></div>
+                            </div>
+                            <div class="entity-type-2-info">
+                                <div class="entity-type-2-info-name">Pizza Margherita</div>
+                                <div class="entity-type-2-info-description">Paleta, sir, bosiljak, maslinovo ulje</div>
+                                <div class="entity-type-2-info-price">
+                                    Ø 39 <span id="entity-price" class="text-span-5">500,00 rsd</span>
+                                </div>
+                            </div>
+                            <div class="order-quantity-div">
+                                <a href="#" id="quantity-minus" class="quantity-minus w-button">-</a>
+                                <div id="entity-quantity" class="text-block-8">0</div>
+                                <a href="#" id="quantity-plus" class="quantity-plus w-button">+</a>
+                            </div>
+                        </div>
+                    </div> 
+
+
+
+                </div>
+                <div class="selected-item-list">
+                    <div class="text-block-5">Izabrane stavke</div>
+                    <div class="selected-item-list-entities">
+
+                    </div>
+                    <div class="div-line"></div>
+                    <div class="selected-item-list-total-price">
+                        <div class="text-block-6">Ukupno</div>
+                        <div id="total-price" class="text-block-7">0,00 rsd</div>
+                    </div>
+                    <div id="checked-list-close" class="checked-list-button">
+                        <img loading="lazy" src="https://cdn.prod.website-files.com/6717dff7a3025e72d8381b78/6717e03aa178d52eff47ada6_order-food.png" alt="" class="image-5"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="checked-list-open" class="checked-list-button">
+            <img loading="lazy" src="https://cdn.prod.website-files.com/6717dff7a3025e72d8381b78/6717e03aa178d52eff47adea_clipboard.png" alt="" class="image-5"/>
+            <div class="item-counter"></div> 
+        </div>
+
+    </body>
+</html>
